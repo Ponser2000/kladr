@@ -1,12 +1,10 @@
 package com.github.ponser2000.kladr.model.platex5;
 
-import org.hibernate.Hibernate;
-
-import javax.persistence.Column;
-import javax.persistence.Embeddable;
-import javax.persistence.Entity;
 import java.io.Serializable;
 import java.util.Objects;
+import javax.persistence.Column;
+import javax.persistence.Embeddable;
+import org.hibernate.Hibernate;
 
 @Embeddable
 public class KladrCitiesId implements Serializable {

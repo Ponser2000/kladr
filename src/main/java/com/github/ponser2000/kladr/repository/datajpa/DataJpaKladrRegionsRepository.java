@@ -3,9 +3,8 @@ package com.github.ponser2000.kladr.repository.datajpa;
 
 import com.github.ponser2000.kladr.model.platex5.KladrRegions;
 import com.github.ponser2000.kladr.repository.KladrRegionsRepository;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
+import org.springframework.stereotype.Repository;
 
 
 @Repository

@@ -2,9 +2,8 @@ package com.github.ponser2000.kladr.repository.datajpa;
 
 import com.github.ponser2000.kladr.model.platex5.KladrAreas;
 import com.github.ponser2000.kladr.repository.KladrAreasRepository;
-import org.springframework.stereotype.Repository;
-
 import java.util.List;
+import org.springframework.stereotype.Repository;
 
 @Repository
 public class DataJpaKladrAreasRepository implements KladrAreasRepository {

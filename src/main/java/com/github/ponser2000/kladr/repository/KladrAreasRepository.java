@@ -1,7 +1,6 @@
 package com.github.ponser2000.kladr.repository;
 
 import com.github.ponser2000.kladr.model.platex5.KladrAreas;
-
 import java.util.List;
 
 public interface KladrAreasRepository {

@@ -2,12 +2,11 @@ package com.github.ponser2000.kladr.service;
 
 import com.github.ponser2000.kladr.model.gnivc.KladrGnivc;
 import com.github.ponser2000.kladr.repository.KladrRegionsRepository;
-import org.springframework.stereotype.Service;
-
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
+import org.springframework.stereotype.Service;
 
 @Service
 public class RegionService {

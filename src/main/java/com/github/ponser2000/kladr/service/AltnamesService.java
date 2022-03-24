@@ -1,9 +1,8 @@
 package com.github.ponser2000.kladr.service;
 
 import com.github.ponser2000.kladr.model.gnivc.AltnamesGnivc;
-import org.springframework.stereotype.Service;
-
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class AltnamesService {

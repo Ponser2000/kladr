@@ -3,14 +3,23 @@ package com.github.ponser2000.kladr;
 
 import com.github.ponser2000.kladr.model.gnivc.AltnamesGnivc;
 import com.github.ponser2000.kladr.model.gnivc.KladrGnivc;
-import com.github.ponser2000.kladr.model.platex5.*;
-import com.github.ponser2000.kladr.service.*;
+import com.github.ponser2000.kladr.model.platex5.KladrAreas;
+import com.github.ponser2000.kladr.model.platex5.KladrAreasId;
+import com.github.ponser2000.kladr.model.platex5.KladrCities;
+import com.github.ponser2000.kladr.model.platex5.KladrCitiesId;
+import com.github.ponser2000.kladr.model.platex5.KladrRegions;
+import com.github.ponser2000.kladr.model.platex5.KladrTowns;
+import com.github.ponser2000.kladr.model.platex5.KladrTownsId;
+import com.github.ponser2000.kladr.service.AltnamesService;
+import com.github.ponser2000.kladr.service.AreaService;
+import com.github.ponser2000.kladr.service.CitiesService;
+import com.github.ponser2000.kladr.service.RegionService;
+import com.github.ponser2000.kladr.service.TownService;
+import java.util.ArrayList;
+import java.util.List;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootApplication
 public class KladrApplication implements CommandLineRunner {

@@ -3,10 +3,9 @@ package com.github.ponser2000.kladr.service;
 import com.github.ponser2000.kladr.model.gnivc.AltnamesGnivc;
 import com.github.ponser2000.kladr.model.gnivc.KladrGnivc;
 import com.github.ponser2000.kladr.util.DBaseUtils;
-import org.springframework.stereotype.Service;
-
 import java.io.IOException;
 import java.util.List;
+import org.springframework.stereotype.Service;
 
 @Service
 public class GnivcService {

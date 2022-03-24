@@ -4,7 +4,6 @@ import com.github.ponser2000.kladr.model.gnivc.AltnamesGnivc;
 import com.github.ponser2000.kladr.model.gnivc.KladrGnivc;
 import com.github.ponser2000.kladr.model.gnivc.StreetGnivc;
 import com.linuxense.javadbf.DBFReader;
-
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
