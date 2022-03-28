@@ -8,91 +8,92 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "KLADR_CITIES_BACKUP")
 public class KladrCities {
-    @EmbeddedId
-    private KladrCitiesId id;
 
-    @Column(name = "NAME", length = 256)
-    private String name;
+  @EmbeddedId
+  private KladrCitiesId id;
 
-    @Column(name = "SOCR", length = 20)
-    private String socr;
+  @Column(name = "NAME", length = 256)
+  private String name;
 
-    @Column(name = "IND", length = 12)
-    private String ind;
+  @Column(name = "SOCR", length = 20)
+  private String socr;
 
-    @Column(name = "OCATD", length = 22)
-    private String ocatd;
+  @Column(name = "IND", length = 12)
+  private String ind;
 
-    @Column(name = "FULL_CODE", length = 26)
-    private String fullCode;
+  @Column(name = "OCATD", length = 22)
+  private String ocatd;
 
-    @Column(name = "RES", length = 1)
-    private String res;
+  @Column(name = "FULL_CODE", length = 26)
+  private String fullCode;
 
-    @Column(name = "ERROR", length = 512)
-    private String error;
+  @Column(name = "RES", length = 1)
+  private String res;
 
-    public String getError() {
-        return error;
-    }
+  @Column(name = "ERROR", length = 512)
+  private String error;
 
-    public void setError(String error) {
-        this.error = error;
-    }
+  public String getError() {
+    return error;
+  }
 
-    public String getRes() {
-        return res;
-    }
+  public void setError(String error) {
+    this.error = error;
+  }
 
-    public void setRes(String res) {
-        this.res = res;
-    }
+  public String getRes() {
+    return res;
+  }
 
-    public String getFullCode() {
-        return fullCode;
-    }
+  public void setRes(String res) {
+    this.res = res;
+  }
 
-    public void setFullCode(String fullCode) {
-        this.fullCode = fullCode;
-    }
+  public String getFullCode() {
+    return fullCode;
+  }
 
-    public String getOcatd() {
-        return ocatd;
-    }
+  public void setFullCode(String fullCode) {
+    this.fullCode = fullCode;
+  }
 
-    public void setOcatd(String ocatd) {
-        this.ocatd = ocatd;
-    }
+  public String getOcatd() {
+    return ocatd;
+  }
 
-    public String getInd() {
-        return ind;
-    }
+  public void setOcatd(String ocatd) {
+    this.ocatd = ocatd;
+  }
 
-    public void setInd(String ind) {
-        this.ind = ind;
-    }
+  public String getInd() {
+    return ind;
+  }
 
-    public String getSocr() {
-        return socr;
-    }
+  public void setInd(String ind) {
+    this.ind = ind;
+  }
 
-    public void setSocr(String socr) {
-        this.socr = socr;
-    }
+  public String getSocr() {
+    return socr;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setSocr(String socr) {
+    this.socr = socr;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public KladrCitiesId getId() {
-        return id;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setId(KladrCitiesId id) {
-        this.id = id;
-    }
+  public KladrCitiesId getId() {
+    return id;
+  }
+
+  public void setId(KladrCitiesId id) {
+    this.id = id;
+  }
 }

@@ -1,6 +1,6 @@
 package com.github.ponser2000.kladr.model.gnivc;
 
-public record StreetGnivc (
+public record StreetGnivc(
     String name,
     String socr,
     String code,
@@ -16,5 +16,6 @@ public record StreetGnivc (
     // Код ИФНС
     // Код территориального участка ИФНС
     // Код ОКАТО
-)
-{ }
+) {
+
+}

@@ -6,6 +6,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface CrudKladrRegionsRepository extends JpaRepository<KladrRegions, Integer> {
 
-    KladrRegions findById(String code);
+  KladrRegions findById(String code);
 
 }

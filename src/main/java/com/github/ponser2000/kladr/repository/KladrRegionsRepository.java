@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface KladrRegionsRepository {
 
-    List<KladrRegions> getAll();
+  List<KladrRegions> getAll();
 
-    KladrRegions update(KladrRegions kladrRegions);
+  KladrRegions update(KladrRegions kladrRegions);
 
-    List<KladrRegions> saveAll(List<KladrRegions> kladrRegionsList);
+  List<KladrRegions> saveAll(List<KladrRegions> kladrRegionsList);
 }

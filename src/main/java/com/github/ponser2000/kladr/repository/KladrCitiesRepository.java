@@ -6,9 +6,9 @@ import java.util.List;
 
 public interface KladrCitiesRepository {
 
-    List<KladrCities> getAll();
+  List<KladrCities> getAll();
 
-    KladrCities update(KladrCities kladrCities);
+  KladrCities update(KladrCities kladrCities);
 
-    List<KladrCities> saveAll(List<KladrCities> kladrCitiesList);
+  List<KladrCities> saveAll(List<KladrCities> kladrCitiesList);
 }

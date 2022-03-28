@@ -10,25 +10,25 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DataJpaKladrRegionsRepository implements KladrRegionsRepository {
 
-    public final CrudKladrRegionsRepository crudRepository;
+  public final CrudKladrRegionsRepository crudRepository;
 
-    public DataJpaKladrRegionsRepository(CrudKladrRegionsRepository crudRepository) {
+  public DataJpaKladrRegionsRepository(CrudKladrRegionsRepository crudRepository) {
 
-        this.crudRepository = crudRepository;
-    }
+    this.crudRepository = crudRepository;
+  }
 
-    @Override
-    public List<KladrRegions> getAll() {
-        return crudRepository.findAll();
-    }
+  @Override
+  public List<KladrRegions> getAll() {
+    return crudRepository.findAll();
+  }
 
-    @Override
-    public KladrRegions update(KladrRegions kladrRegions) {
-        return crudRepository.saveAndFlush(kladrRegions);
-    }
+  @Override
+  public KladrRegions update(KladrRegions kladrRegions) {
+    return crudRepository.saveAndFlush(kladrRegions);
+  }
 
-    @Override
-    public List<KladrRegions> saveAll(List<KladrRegions> kladrRegionsList) {
-        return crudRepository.saveAll(kladrRegionsList);
-    }
+  @Override
+  public List<KladrRegions> saveAll(List<KladrRegions> kladrRegionsList) {
+    return crudRepository.saveAll(kladrRegionsList);
+  }
 }

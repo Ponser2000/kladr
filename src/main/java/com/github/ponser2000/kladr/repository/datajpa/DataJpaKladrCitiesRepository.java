@@ -8,24 +8,24 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DataJpaKladrCitiesRepository implements KladrCitiesRepository {
 
-    public final CrudKladrCitiesRepository kladrCitiesRepository;
+  public final CrudKladrCitiesRepository kladrCitiesRepository;
 
-    public DataJpaKladrCitiesRepository(CrudKladrCitiesRepository kladrCitiesRepository) {
-        this.kladrCitiesRepository = kladrCitiesRepository;
-    }
+  public DataJpaKladrCitiesRepository(CrudKladrCitiesRepository kladrCitiesRepository) {
+    this.kladrCitiesRepository = kladrCitiesRepository;
+  }
 
-    @Override
-    public List<KladrCities> getAll() {
-        return kladrCitiesRepository.findAll();
-    }
+  @Override
+  public List<KladrCities> getAll() {
+    return kladrCitiesRepository.findAll();
+  }
 
-    @Override
-    public KladrCities update(KladrCities kladrCities) {
-        return kladrCitiesRepository.saveAndFlush(kladrCities);
-    }
+  @Override
+  public KladrCities update(KladrCities kladrCities) {
+    return kladrCitiesRepository.saveAndFlush(kladrCities);
+  }
 
-    @Override
-    public List<KladrCities> saveAll(List<KladrCities> kladrCitiesList) {
-        return kladrCitiesRepository.saveAll(kladrCitiesList);
-    }
+  @Override
+  public List<KladrCities> saveAll(List<KladrCities> kladrCitiesList) {
+    return kladrCitiesRepository.saveAll(kladrCitiesList);
+  }
 }

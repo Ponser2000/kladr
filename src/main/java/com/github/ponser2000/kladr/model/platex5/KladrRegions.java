@@ -8,149 +8,150 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "KLADR_REGIONS_BACKUP")
 public class KladrRegions {
-    @Id
-    @Column(name = "CODE", nullable = false, length = 6)
-    private String id;
 
-    @Column(name = "NAME", length = 256)
-    private String name;
+  @Id
+  @Column(name = "CODE", nullable = false, length = 6)
+  private String id;
 
-    @Column(name = "SOCR", length = 20)
-    private String socr;
+  @Column(name = "NAME", length = 256)
+  private String name;
 
-    @Column(name = "IND", length = 12)
-    private String ind;
+  @Column(name = "SOCR", length = 20)
+  private String socr;
 
-    @Column(name = "OCATD", length = 22)
-    private String ocatd;
+  @Column(name = "IND", length = 12)
+  private String ind;
 
-    @Column(name = "FULL_CODE", length = 26)
-    private String fullCode;
+  @Column(name = "OCATD", length = 22)
+  private String ocatd;
 
-    @Column(name = "RGN_CODE", length = 6)
-    private String rgnCode;
+  @Column(name = "FULL_CODE", length = 26)
+  private String fullCode;
 
-    @Column(name = "RES", length = 1)
-    private String res;
+  @Column(name = "RGN_CODE", length = 6)
+  private String rgnCode;
 
-    @Column(name = "ERROR", length = 512)
-    private String error;
+  @Column(name = "RES", length = 1)
+  private String res;
 
-    @Column(name = "ALL_RECS")
-    private Long allRecs;
+  @Column(name = "ERROR", length = 512)
+  private String error;
 
-    @Column(name = "SUCCESS_RECS")
-    private Long successRecs;
+  @Column(name = "ALL_RECS")
+  private Long allRecs;
 
-    @Column(name = "ERROR_RECS")
-    private Long errorRecs;
+  @Column(name = "SUCCESS_RECS")
+  private Long successRecs;
 
-    public Long getErrorRecs() {
-        return errorRecs;
-    }
+  @Column(name = "ERROR_RECS")
+  private Long errorRecs;
 
-    public void setErrorRecs(Long errorRecs) {
-        this.errorRecs = errorRecs;
-    }
+  public Long getErrorRecs() {
+    return errorRecs;
+  }
 
-    public Long getSuccessRecs() {
-        return successRecs;
-    }
+  public void setErrorRecs(Long errorRecs) {
+    this.errorRecs = errorRecs;
+  }
 
-    public void setSuccessRecs(Long successRecs) {
-        this.successRecs = successRecs;
-    }
+  public Long getSuccessRecs() {
+    return successRecs;
+  }
 
-    public Long getAllRecs() {
-        return allRecs;
-    }
+  public void setSuccessRecs(Long successRecs) {
+    this.successRecs = successRecs;
+  }
 
-    public void setAllRecs(Long allRecs) {
-        this.allRecs = allRecs;
-    }
+  public Long getAllRecs() {
+    return allRecs;
+  }
 
-    public String getError() {
-        return error;
-    }
+  public void setAllRecs(Long allRecs) {
+    this.allRecs = allRecs;
+  }
 
-    public void setError(String error) {
-        this.error = error;
-    }
+  public String getError() {
+    return error;
+  }
 
-    public String getRes() {
-        return res;
-    }
+  public void setError(String error) {
+    this.error = error;
+  }
 
-    public void setRes(String res) {
-        this.res = res;
-    }
+  public String getRes() {
+    return res;
+  }
 
-    public String getRgnCode() {
-        return rgnCode;
-    }
+  public void setRes(String res) {
+    this.res = res;
+  }
 
-    public void setRgnCode(String rgnCode) {
-        this.rgnCode = rgnCode;
-    }
+  public String getRgnCode() {
+    return rgnCode;
+  }
 
-    public String getFullCode() {
-        return fullCode;
-    }
+  public void setRgnCode(String rgnCode) {
+    this.rgnCode = rgnCode;
+  }
 
-    public void setFullCode(String fullCode) {
-        this.fullCode = fullCode;
-    }
+  public String getFullCode() {
+    return fullCode;
+  }
 
-    public String getOcatd() {
-        return ocatd;
-    }
+  public void setFullCode(String fullCode) {
+    this.fullCode = fullCode;
+  }
 
-    public void setOcatd(String ocatd) {
-        this.ocatd = ocatd;
-    }
+  public String getOcatd() {
+    return ocatd;
+  }
 
-    public String getInd() {
-        return ind;
-    }
+  public void setOcatd(String ocatd) {
+    this.ocatd = ocatd;
+  }
 
-    public void setInd(String ind) {
-        this.ind = ind;
-    }
+  public String getInd() {
+    return ind;
+  }
 
-    public String getSocr() {
-        return socr;
-    }
+  public void setInd(String ind) {
+    this.ind = ind;
+  }
 
-    public void setSocr(String socr) {
-        this.socr = socr;
-    }
+  public String getSocr() {
+    return socr;
+  }
 
-    public String getName() {
-        return name;
-    }
+  public void setSocr(String socr) {
+    this.socr = socr;
+  }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public String getId() {
-        return id;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setId(String id) {
-        this.id = id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    @Override
-    public String toString() {
-        return "KladrRegions{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", socr='" + socr + '\'' +
-                ", ind='" + ind + '\'' +
-                ", ocatd='" + ocatd + '\'' +
-                ", fullCode='" + fullCode + '\'' +
-                ", rgnCode='" + rgnCode + '\'' +
-                '}';
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
+
+  @Override
+  public String toString() {
+    return "KladrRegions{" +
+        "id='" + id + '\'' +
+        ", name='" + name + '\'' +
+        ", socr='" + socr + '\'' +
+        ", ind='" + ind + '\'' +
+        ", ocatd='" + ocatd + '\'' +
+        ", fullCode='" + fullCode + '\'' +
+        ", rgnCode='" + rgnCode + '\'' +
+        '}';
+  }
 }

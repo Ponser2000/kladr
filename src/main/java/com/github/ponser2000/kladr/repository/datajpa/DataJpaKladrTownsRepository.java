@@ -8,19 +8,19 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class DataJpaKladrTownsRepository implements KladrTownsRepository {
 
-    final CrudKladrTownsRepository kladrTownsRepository;
+  final CrudKladrTownsRepository kladrTownsRepository;
 
-    public DataJpaKladrTownsRepository(CrudKladrTownsRepository kladrTownsRepository) {
-        this.kladrTownsRepository = kladrTownsRepository;
-    }
+  public DataJpaKladrTownsRepository(CrudKladrTownsRepository kladrTownsRepository) {
+    this.kladrTownsRepository = kladrTownsRepository;
+  }
 
-    @Override
-    public KladrTowns update(KladrTowns kladrTown) {
-        return kladrTownsRepository.saveAndFlush(kladrTown);
-    }
+  @Override
+  public KladrTowns update(KladrTowns kladrTown) {
+    return kladrTownsRepository.saveAndFlush(kladrTown);
+  }
 
-    @Override
-    public List<KladrTowns> saveAll(List<KladrTowns> KladrTownsList) {
-        return kladrTownsRepository.saveAll(KladrTownsList);
-    }
+  @Override
+  public List<KladrTowns> saveAll(List<KladrTowns> KladrTownsList) {
+    return kladrTownsRepository.saveAll(KladrTownsList);
+  }
 }

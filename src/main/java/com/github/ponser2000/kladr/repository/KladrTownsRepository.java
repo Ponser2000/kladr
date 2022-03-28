@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface KladrTownsRepository {
 
-    KladrTowns update(KladrTowns kladrTown);
+  KladrTowns update(KladrTowns kladrTown);
 
-    List<KladrTowns> saveAll(List<KladrTowns> KladrTownsList);
+  List<KladrTowns> saveAll(List<KladrTowns> KladrTownsList);
 }

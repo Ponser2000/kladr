@@ -6,14 +6,15 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class AltnamesService {
-    public final GnivcService gnivcService;
+
+  public final GnivcService gnivcService;
 
 
-    public AltnamesService(GnivcService gnivcService) {
-        this.gnivcService = gnivcService;
-    }
+  public AltnamesService(GnivcService gnivcService) {
+    this.gnivcService = gnivcService;
+  }
 
-    public List<AltnamesGnivc> getAllAltnames(){
-        return GnivcService.altnamesGnivcList;
-    }
+  public List<AltnamesGnivc> getAllAltnames() {
+    return GnivcService.altnamesGnivcList;
+  }
 }

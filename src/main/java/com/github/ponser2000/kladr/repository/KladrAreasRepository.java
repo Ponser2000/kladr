@@ -5,10 +5,10 @@ import java.util.List;
 
 public interface KladrAreasRepository {
 
-    List<KladrAreas> getAll();
+  List<KladrAreas> getAll();
 
-    KladrAreas update(KladrAreas kladrAreas);
+  KladrAreas update(KladrAreas kladrAreas);
 
-    List<KladrAreas> saveAll(List<KladrAreas> kladrAreasList);
+  List<KladrAreas> saveAll(List<KladrAreas> kladrAreasList);
 
 }
