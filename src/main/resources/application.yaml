@@ -12,9 +12,9 @@ spring:
         enable_lazy_load_no_trans: true
     database-platform: org.hibernate.dialect.Oracle10gDialect
   datasource:
-    url: jdbc:oracle:thin:@192.168.81.116:1521:PLATEX5
-    username: platex
-    password: plx314
+    url: jdbc:oracle:thin:@<server ip address>:1521:<data base name>
+    username: <username>
+    password: <password>
     driver-class-name: oracle.jdbc.OracleDriver
 
 logging:
